@@ -1,34 +1,19 @@
-#include<stdio.h>
-#include <conio.h>
+#include <stdio.h>
+/*
+Add `int max_of_four(int a, int b, int c, int d)` here.
+*/
+int max_of_four(int a, int b, int c, int d){
+    int max1 = a > b ? a : b;
+    int max2 = c > d ? c : d;
+    return max1 > max2 ? max1 : max2;
+    
+}
 
-
-int main() 
-{
-    int a,b,c,d; 
-    int max1, max2;
-    printf("Enter Four Numbers for comparison:");
-    // Taking Inputs from user.
-    scanf("%d %d %d %d", &a, &b, &c, &d); 
+int main() {
+    int a, b, c, d;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    int ans = max_of_four(a, b, c, d);
+    printf("%d", ans);
     
-    // Finding MAX amongst a and b and storing that into max1.
-    if (a > b)
-    max1 = a;
-    else
-    max1 = b;
-    
-    // Finding MAX amongst c and d and storing that into max2.
-    if (c > d)
-    max2 = c;
-    else
-    max2 = d;
-  
-    
-    // Finding MAX amongst max1 and max2 and printing the largest value on console.
-    if (max1 > max2)
-    printf("%d is largest", max1);
-    else
-    printf("%d is largest", max2);
-    
-    getch();
-} 
-
+    return 0;
+}
