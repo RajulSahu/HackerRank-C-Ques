@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include <conio.h>
+
+
+int main() 
+{
+    int a,b,c,d; 
+    int max1, max2;
+    printf("Enter Four Numbers for comparison:");
+    // Taking Inputs from user.
+    scanf("%d %d %d %d", &a, &b, &c, &d); 
+    
+    // Finding MAX amongst a and b and storing that into max1.
+    if (a > b)
+    max1 = a;
+    else
+    max1 = b;
+    
+    // Finding MAX amongst c and d and storing that into max2.
+    if (c > d)
+    max2 = c;
+    else
+    max2 = d;
+  
+    
+    // Finding MAX amongst max1 and max2 and printing the largest value on console.
+    if (max1 > max2)
+    printf("%d is largest", max1);
+    else
+    printf("%d is largest", max2);
+    
+    getch();
+} 
+

@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+ int a, b;
+    float c, d;
+    
+    // Taking inputs from user.
+    scanf("%d %d", &a, &b);
+    scanf("%f %f", &c, &d);
+    
+    // Performing operations on integer values.
+    // int int_sum = a + b;
+    // int int_diff = a - b;
+    
+    
+    // Performing operations on float values.
+    // float float_sum = c + d;
+    // float float_diff = c - d;
+    
+    
+    // Printing output on console.
+    printf("%d %d\n %.1f %.1f", a+b, a-b, c+d, c-d);
+    
+    return 0;
+}
